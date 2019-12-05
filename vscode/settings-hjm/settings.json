@@ -1,0 +1,82 @@
+{
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace", // default "default" Fira Code支持字体连接
+    "editor.fontLigatures": true, // default false 启用字体连字
+
+    // "editor.detectIndentation": false, // default true 打开文件自动检查tabSize和insertSpaces
+
+    "editor.renderWhitespace": "all", // default "none" 空白字符上显示字符的方式
+    "editor.renderControlCharacters": true, // default false 显示控制字符
+
+    "files.autoSave": "onWindowChange", // default off
+
+    "window.zoomLevel": 0.2, // default 0 窗口缩放级别
+
+    // "prettier.tabWidth": 4, // default 2
+    // "prettier.singleQuote": true, //default false
+
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [ "javascript", "javascriptreact", { "language": "vue","autoFix": true } ], // default ["javascript", "javascriptreact"]
+
+    "vetur.format.options.tabSize": 4, // default 2, prefer .prettierrc.js
+    "vetur.format.defaultFormatterOptions": {
+        "prettyhtml": { // >>> html
+            "printWidth": 140 // default 80
+        },
+        "prettier": { // >>> css, less, scss, js, ts
+            "printWidth": 140, // default 80
+            "semi": false, // default true
+            "singleQuote": true, // default false
+            "tabWidth": 4 //default 2
+        }
+    },
+
+    "path-intellisense.mappings": { // import @ 路径提示
+        "@": "${workspaceRoot}/src"
+    },
+
+    "workbench.editor.openPositioning": "left",
+
+    "materialTheme.accent": "Lime",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#7CB342",
+        "list.activeSelectionForeground": "#7CB342",
+        "list.inactiveSelectionForeground": "#7CB342",
+        "list.highlightForeground": "#7CB342",
+        "scrollbarSlider.activeBackground": "#7CB34250",
+        "editorSuggestWidget.highlightForeground": "#7CB342",
+        "textLink.foreground": "#7CB342",
+        "progressBar.background": "#7CB342",
+        "pickerGroup.foreground": "#7CB342",
+        "tab.activeBorder": "#7CB342",
+        "notificationLink.foreground": "#7CB342",
+        "editorWidget.resizeBorder": "#7CB342",
+        "editorWidget.border": "#7CB342",
+        "settings.modifiedItemIndicator": "#7CB342",
+        "settings.headerForeground": "#7CB342",
+        "panelTitle.activeBorder": "#7CB342",
+        "breadcrumb.activeSelectionForeground": "#7CB342",
+        "menu.selectionForeground": "#7CB342",
+        "menubar.selectionForeground": "#7CB342",
+        "editor.findMatchBorder": "#7CB342",
+        "selection.background": "#7CB34240"
+    },
+
+
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[less]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}

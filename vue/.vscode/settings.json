@@ -1,0 +1,17 @@
+{
+    // .gitignore注释.vscode, 该文件才会生效
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "vue",
+            "autoFix": true
+        }
+    ],
+    // 避免项目prettier、vscode的prettier矛盾
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false,
+    "prettier.semi": false,
+    "prettier.singleQuote": true
+}

@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "clean": "rimraf ../web/css & rimraf ../web/js & rimraf ../web/img & rimraf ../web/fonts",
+        "build": "npm run clean && vue-cli-service build  --no-clean"
+    }
+}
